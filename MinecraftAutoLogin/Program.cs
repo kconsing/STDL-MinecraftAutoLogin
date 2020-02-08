@@ -70,7 +70,7 @@ namespace MinecraftAutoLogin
         {
             // Hide console window
             var handle = GetConsoleWindow();
-            ShowWindow(handle, SW_SHOW);
+            ShowWindow(handle, SW_HIDE);
 
             // Close all existing Minecraft Process
             foreach (Process p in System.Diagnostics.Process.GetProcessesByName("MinecraftLauncher"))
